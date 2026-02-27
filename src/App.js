@@ -9,8 +9,6 @@ import TeamSection from './TeamSection';
 import TestimonialS from './Testimonial';
 import VedioS from './VedioS';
 import BlogS from './BlogS.jsx';
-import Contect from './Contect.jsx'
-import Footer from './Footer.jsx';
 import './App.css';
 
 function App() {
@@ -27,8 +25,6 @@ function App() {
 <TestimonialS />
 <VedioS />
 <BlogS />
-<Contect />
-<Footer />
 
 
 </>
