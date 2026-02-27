@@ -1,0 +1,115 @@
+/* ================= TESTIMONIAL SECTION ================= */
+.testimonial-section {
+  background: #fdfcfc;
+  color: #1f1e1e;
+  padding: 80px 8%;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* removed display: flex to allow stacking */
+  display: block; /* ensures heading is above cards */
+}
+
+/* ================= HEADER ================= */
+.testimonial-heading {
+  color: #0f68ef;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px; /* less spacing */
+  display: block;
+}
+
+.testimonial-main-title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 60px; /* space between heading and cards */
+}
+
+/* ================= TESTIMONIAL LIST ================= */
+.testimonial-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-items: center; /* center cards under heading */
+}
+
+/* ================= TESTIMONIAL CARD ================= */
+.testimonial-card {
+  background: #879398;
+  border-radius: 12px;
+  padding: 30px 25px;
+  box-shadow: 0 5px 15px rgba(10, 127, 229, 0.5);
+  transition: 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(16, 136, 240, 0.5);
+}
+
+/* ================= STAR RATINGS ================= */
+.testimonial-stars {
+  color: #ffb400;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* ================= TEXT ================= */
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #ccc;
+  margin-bottom: 25px;
+  min-height: 80px; /* ensures cards align nicely */
+}
+
+/* ================= USER INFO ================= */
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.testimonial-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #1557ff;
+}
+
+.testimonial-user-info {
+  text-align: left;
+}
+
+.testimonial-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.testimonial-role {
+  font-size: 14px;
+  color: #999;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .testimonial-list {
+    grid-template-columns: 1fr;
+  }
+
+  .testimonial-main-title {
+    font-size: 36px;
+  }
+}
+.testimonial-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(16, 136, 240, 0.5);
+  background: #1557ff;   /* 👈 New background color */
+  color: #fff;           /* 👈 Text white ho jaye */
+}
+.testimonial-card {
+  transition: all 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+}

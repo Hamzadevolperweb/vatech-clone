@@ -1,0 +1,132 @@
+/* Section */
+.blog-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  font-family: "Segoe UI", sans-serif;
+  background: #ffffff;   /* ✅ White Background */
+}
+
+/* Header */
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.small-title {
+  color: #005cff;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 16px;
+}
+
+.blog-header h2 {
+  font-size: 46px;
+  color: #002b45;
+  margin-top: 10px;
+  line-height: 1.3;
+}
+
+/* Short Modern Button Design */
+.explore-btn,
+.read-btn {
+  background: #005cff;
+  color: #ffffff;
+  padding: 10px 22px;   /* ✅ compact size */
+  border: none;
+  border-radius: 6px;   /* thora short corner */
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+.explore-btn:hover,
+.read-btn:hover {
+  background: #002b45;
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 92, 255, 0.25);
+}
+
+/* Grid */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Card */
+.blog-card {
+  background: #ffffff;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* Image */
+.blog-image {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.blog-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease;
+}
+
+.blog-card:hover .blog-image img {
+  transform: scale(1.08);
+}
+
+/* Category Badge */
+.category {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #005cff;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* Content */
+.blog-content {
+  padding: 25px;
+}
+
+.blog-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  color: #005cff;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.blog-content h3 {
+  font-size: 26px;
+  color: #002b45;
+  margin-bottom: 22px;
+  line-height: 1.5;
+  transition: 0.3s ease;
+}
+
+.blog-card:hover h3 {
+  color: #005cff;
+}

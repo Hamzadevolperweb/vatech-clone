@@ -1,0 +1,162 @@
+/* Navbar base */
+
+.navbar {
+  background: #012727;
+  color: white;
+  padding: 20px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 9999;   /* 👈 IMPORTANT */
+}
+
+/* Container */
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: center;
+}
+
+/* Logo */
+.logo h2 {
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+
+}
+
+/* Nav links */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav items */
+.nav-links ul li {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Dropdown menu - hidden by default */
+/* Nav items */
+.nav-links ul li {
+  position: relative;
+  cursor: pointer;
+  padding: 8px 0;
+}
+
+/* Dropdown menu */
+.menu-item {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: #fafafa;
+  color: black;
+  list-style: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+  display: block;   /* 👈 Horizontal */
+  gap: 20px;
+  white-space: nowrap;
+}
+
+.dropdown li {
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dropdown li:hover {
+  background: #006aff;
+  color: white;
+  border-radius: 4px;
+}
+
+/* Quote button */
+.quote-btn a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  background: #006aff;
+  border-radius: 4px;
+}
+
+.quote-btn a:hover {
+  background: #006aff;
+}
+
+/* Mobile menu toggle */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links ul {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .nav-links ul li {
+    padding: 12px 20px;
+  }
+
+  .dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .quote-btn {
+    display: none; /* optional: hide on mobile */
+  }
+}
+/* Quote button */
+.quote-btn a {
+  color: white;
+  text-decoration: none;
+  padding: 12px 22px;   /* Size increase */
+  background: #006aff;
+  border-radius: 6px;
+  font-size: 16px;      /* Text size thora bara */
+  font-weight: 600;
+  transition: all 0.3s ease;  /* Smooth hover */
+  display: inline-block;
+}
+
+/* Hover effect */
+.quote-btn a:hover {
+  background: #004ecc;   /* Darker blue */
+  transform: translateY(-3px);  /* Thora upar move */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25); /* Shadow effect */
+}

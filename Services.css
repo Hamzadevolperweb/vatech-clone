@@ -1,0 +1,144 @@
+/* ================= SERVICES SECTION ================= */
+.services {
+  background: #000;
+  color: #fff;
+  padding: 60px 8%; /* slightly smaller padding */
+  font-family: Arial, sans-serif;
+}
+
+/* ================= HEADER ================= */
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px; /* reduced margin */
+}
+
+.small-title {
+  color: #999;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.services-header h1 {
+  font-size: 50px; /* smaller heading for balance */
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.services-header span {
+  color: #fff;
+}
+
+/* ================= VIEW ALL BUTTON ================= */
+.view-all {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.view-all span {
+  color: #ccc;
+  font-size: 18px;
+}
+
+.arrow-btn {
+  background: #1557ff;
+  width: 45px;  /* smaller button */
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+.arrow-btn:hover {
+  background: #0f46d8;
+}
+
+/* ================= CARDS ================= */
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 40px 30px; /* reduced padding for compact look */
+  transition: 0.3s ease;
+  background: #0b0b0b;
+  border-radius: 12px; /* rounded corners for elegance */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5); /* subtle shadow */
+}
+
+.card:hover {
+  background: #1088f0;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(16, 136, 240, 0.5);
+}
+
+/* ================= ICON BOX ================= */
+.icon-box {
+  width: 50px;       /* smaller box */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.icon-box img {
+  width: 35px;       /* smaller icon */
+  height: 35px;
+  object-fit: contain;
+}
+
+/* ================= TEXT ================= */
+.card h2 {
+  font-size: 28px; /* slightly smaller for balance */
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #aaa;
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+/* ================= READ MORE ================= */
+.read-more {
+  display: inline-block;
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.read-more:hover {
+  color: #1557ff;
+  transform: translateX(5px);
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 992px) {
+  .services-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .services-header h1 {
+    font-size: 36px;
+  }
+
+  .services-cards {
+    grid-template-columns: 1fr;
+  }
+}
