@@ -1,6 +1,6 @@
 import React from "react";
 import "./VedioS.css";
-import sampleVideo from "./images/01. What is React_.mp4";
+import sampleVideo from "./images/what-is-react.mp4";
 
 function VideoComponent() {
   return (
